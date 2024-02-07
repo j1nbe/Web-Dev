@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            min-height: 100vh;
+            margin: auto;
+        }
+
+        .form-div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-div form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 3vh 2vw;
+            border: 1px solid rgba(128, 128, 128, 0.3);
+        }
+
+        .form-div form .instaLogo {
+            width: 200px;
+            margin: 20px 0;
+        }
+
+        .form-div form .input {
+            width: 90%;
+            padding: .6rem;
+            border-radius: 8px;
+            border: 1px solid rgba(128, 128, 128, 0.3);
+            margin: 3px;
+        }
+
+        .login-btn {
+            width: 97%;
+            padding: .4rem;
+            font-weight: 700;
+            background-color: rgb(1, 183, 255);
+            border: none;
+            border-radius: 8px;
+            margin: 8px 0px;
+            color: white;
+        }
+
+        #or {
+            margin: 20px 0;
+        }
+
+        #or:before,
+        #or:after {
+            content: '------------------------';
+            color: rgba(128, 128, 128, 0.7);
+            margin: 0 10px;
+        }
+
+        .fb-login {
+            font-weight: 700;
+            font-size: 95%;
+            color: rgb(70, 130, 180);
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+
+        #forgotten{
+            font-size: 70%;
+            color: rgb(100, 149, 237);
+            margin-bottom: 15px;
+            margin-top: -15px;
+        }
+
+        .sign-up {
+            text-align: center;
+            border: 1px solid rgba(128, 128, 128, 0.3);
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .get-app {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .store {
+            display: flex;
+            align-items: center;
+        }
+
+        #play {
+            width: 135px;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #microsoft {
+            width: 115px;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-right: 30px;
+        }
+
+        .sign-link{
+            color: #1E90FF;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <img src="https://www.instagram.com/images/instagram/xig/homepage/screenshots/screenshot1.png?__d=www" alt="" class="phoneImg">
+    <div class="form-div">
+        <form action="">
+            <img class="instaLogo" src="https://raw.githubusercontent.com/jatin4rya/V8-Instagram-Login-Clone/main/instaLogo.png" alt="logo">
+            <input type="text" class="input" placeholder="Phone number, username or email address" required>
+            <input type="password" class="input" required placeholder="Password">
+            <button class="login-btn">Log In</button>
+            <p id="or">OR</p>
+            <a href="#" class="fb-login"><i class='bx bxl-facebook-square'></i>Log in with Facebook</a>
+            <p id="forgotten">Forgotten your password?</p>
+        </form>
+        <div class="sign-up">
+            <p>Don't have an account? <a href="#" class="sign-link">Sign up</a></p>
+        </div>
+        <div class="get-app">
+            <p>Get the app</p>
+            <div class="store">
+                <img id="play" src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+                <img id="microsoft" src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="">
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
